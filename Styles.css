@@ -339,18 +339,24 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+    .logo {
+        width: 70px;
+    }
 
     .project-layout {
         grid-template-columns: 1fr;
     }
 
     .project-products {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 
     .project-image img {
+        width: 100%;
+        max-width: 100%;
         height: auto;
-        max-height: 400px;
+        object-fit: contain;
+        display: block;
     }
 
     .project-description {
